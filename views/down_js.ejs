@@ -44,7 +44,24 @@
                     $('.myline').css({ "width": 0 + 'px', "left": y + 'px' });
                 })
         });
+        
+        // 收藏
+        $('.collecticon').click(function () {
+            $('.resultbox-1').toggleClass("on");
+            $('.collecticon').toggleClass("on");
+        });
+
+        // 比較
+        $('.compare').click(function () {
+            $('.resultbox-2').toggleClass("on");
+            $('.compare').toggleClass("on");
+        });
+
+        // 刪除
+        $('.closex').click(function () {
+            $(this).parent().remove();
+        });
+
 
     })
 </script>
-

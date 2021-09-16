@@ -33,8 +33,52 @@ footer {
 .toprightbox{
   position: fixed;
   z-index: 900;
-  right: 10px;
+  right: 0px;
   bottom: 100px;
+}
+
+.compare{
+  width: 40px;
+  padding: 15px 5px;
+  background-color: #4284d9;
+  color: #fff;
+  margin-bottom: 15px;
+  border-radius: 8px 0 0 8px;
+  transition: 0.3s;
+  position: relative;
+  right: 0;
+}
+
+.compare:hover{
+  background-color: #63a4fa;
+}
+
+.collecticon{
+  width: 40px;
+  padding: 15px 5px;
+  background-color: #c90b0b;
+  color: #fff;
+  margin-bottom: 15px;
+  border-radius: 8px 0 0 8px;
+  transition: 0.3s;
+  position: relative;
+  right: 0;
+}
+
+.collecticon:hover{
+  background-color: #e70000;
+}
+
+.collecticon span, .compare span{
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr ;
+  letter-spacing: 4px;
+  font-size: 0.9rem;
+}
+
+.collecticon img, .compare img {
+  width: 20px;
+  margin-bottom: 5px;
 }
 
 .menutop {
@@ -53,9 +97,81 @@ footer {
   background-color: #003267;
 }
 
-.menutop img {
+.menutop img{
   width: 30px;
 }
+
+.resultbox-1, .resultbox-2{
+  width: 170px;
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  height: 100vh;
+  position: fixed;
+  z-index: 900;
+  right: -170px;
+  top: 0px;
+  transition: all 0.3s;
+  overflow-y: auto;
+}
+
+.resultbox-1.on, .resultbox-2.on{
+  right: 0px;
+}
+
+.compare.on, .collecticon.on{
+  right: 170px;
+}
+
+.res_s1{
+  position: relative;
+}
+
+.res_s1 img{
+  width: 150px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.closex{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  z-index: 5;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mbtn-1{
+  background: #c90b0b;
+  color: #fff;
+  width: 150px;
+  border-radius: 5px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 返回 結束 */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 header {
   background: linear-gradient(0deg, #003166 0%, #1B6EBE 50%, #003166 100%);
