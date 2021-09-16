@@ -1,0 +1,83 @@
+<% layout('layout') %>
+
+    <section class="fd2">
+        <div class="con-mid fd2">
+
+            <div class="log-box fd2 row-120">
+                <div class="log-title fl6">
+                    <img class="car01" src="./../images/car01.png" alt="">
+                    <div class="log-txt1">HOCHA 註冊 登入</div>
+                </div>
+
+                <div class="log-inputbox fd2">
+                    <div class="log-input fd2">
+                        <div class="log-btnbox fl6">
+                            <div class="Hbtn fl5">登入</div>
+                            <div class="Hbtn fl5">註冊</div>
+                        </div>
+
+                        <!-- 註冊 -->
+                        <div class="fd2 w100">
+                            <form action="" id="tab1" class="tab_content fd2">
+                                <figure class="qbox fd1">
+                                    <label class="title" for="userName">E-mail</label>
+                                    <input class="in-text" type="text" id="userName" name="userName">
+                                </figure>
+                                <figure class="qbox fd1">
+                                    <label class="title" for="passwd">密碼</label>
+                                    <input class="in-text" type="password" id="passwd" name="passwd">
+                                </figure>
+                                
+                                <input class="btn-style1" type="submit" value="送出">
+                            </form>
+
+                            <!-- 登入 -->
+                            <form action="" id="tab2" class="tab_content fd2">
+                                <figure class="qbox fd1">
+                                    <label class="title" for="userName">E-mail</label>
+                                    <input class="in-text" type="text" id="userName">
+                                </figure>
+                                <figure class="qbox fd1">
+                                    <label class="title" for="passwd">密碼</label>
+                                    <input class="in-text" type="password" id="passwd">
+                                </figure>
+                                <figure class="qbox qbox45 fd1">
+                                    <label class="title" for="chpasswd">再次確認密碼</label>
+                                    <input class="in-text" type="password" id="chpasswd">
+                                </figure>
+
+                                <input class="btn-style1" type="submit" value="送出">
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <script>
+        $(function () {
+            var _showTab = 0;
+            var $defaultLi = $('.Hbtn').eq(_showTab).addClass('active');
+            $('.tab_content').eq($defaultLi.index()).siblings().hide();
+
+            $('.Hbtn').click(function () {
+
+                var $this = $(this),
+                    _index = $this.index();
+
+                $this.addClass('active').siblings('.active').removeClass('active');
+                $('.tab_content').eq(_index).stop(false, true).fadeIn().siblings().hide();
+
+                return false;
+            })
+        });
+    </script>

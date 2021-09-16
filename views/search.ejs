@@ -1,0 +1,303 @@
+<% layout('layout') %>
+
+    <section class="fd2">
+        <div class="con-mid fd2">
+
+
+            <section class="aui-screen-box">
+                <div class="aui-screen-content">
+                    <div class="aui-choice-screen">
+                        <div class="aui-screen-head-choice">
+                            <dl>
+                                <dt>已選條件：</dt>
+                                <dd style="display:none" class=aui-clear-delete>
+                                    <div class=aui-clear-list></div>
+                                    <div style="display:none" class="aui-eliminate">清除篩選條件</div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div id="aui-selectList" class="aui-screen-list-box">
+                            <dl class="aui-screen-list-item" attr="terminal_brand_s">
+                                <dt>車型：</dt>
+                                <dd>
+                                    <a href="javascript:void(0)">轎車</a>
+                                    <a href="javascript:void(0)">掀背車</a>
+                                    <a href="javascript:void(0)">SUV</a>
+                                    <a href="javascript:void(0)">MPV</a>
+                                    <a href="javascript:void(0)">Wagon 旅行車</a>
+                                    <a href="javascript:void(0)">跑車</a>
+                                    <a href="javascript:void(0)">敞篷車</a>
+                                    <a href="javascript:void(0)">貨卡車</a>
+                                </dd>
+                            </dl>
+                            <dl class="aui-screen-list-item" attr="">
+                                <dt>價格：</dt>
+                                <dd>
+                                    <a href="javascript:void(0)">60萬以下</a>
+                                    <a href="javascript:void(0)">60-80萬</a>
+                                    <a href="javascript:void(0)">80-120萬</a>
+                                    <a href="javascript:void(0)">120-180萬</a>
+                                    <a href="javascript:void(0)">180-300萬</a>
+                                    <a href="javascript:void(0)">300萬以上</a>
+                                    <label class="aui-sr-input">
+                                        <input type="text" placeholder="" value="">
+                                        -
+                                        <input type="text" placeholder="" value="">
+                                        萬
+                                        <button>確認</button>
+                                    </label>
+                                </dd>
+                            </dl>
+                            <dl class=" aui-screen-list-item" attr="aui-terminal">
+                                <dt>變速：</dt>
+                                <dd>
+                                    <a href="javascript:void(0)">手排</a>
+                                    <a href="javascript:void(0)">自排</a>
+                                    <a href="javascript:void(0)">自手排</a>
+                                    <a href="javascript:void(0)">手自排</a>
+                                    <a href="javascript:void(0)">無段變速</a>
+                                </dd>
+                            </dl>
+                            <dl class=" aui-screen-list-item" attr="aui-terminal">
+                                <dt>排量：</dt>
+                                <dd>
+                                    <a href="javascript:void(0)">1.6L以下</a>
+                                    <a href="javascript:void(0)">1.6-1.8L</a>
+                                    <a href="javascript:void(0)">1.8-2.0L</a>
+                                    <a href="javascript:void(0)">2.0-2.4L</a>
+                                    <a href="javascript:void(0)">2.4-3.0L</a>
+                                    <a href="javascript:void(0)">3.0L以上</a>
+                                </dd>
+                            </dl>
+                            <dl class=" aui-screen-list-item" attr="aui-terminal">
+                                <dt>燃料：</dt>
+                                <dd>
+                                    <a href="javascript:void(0)">汽油</a>
+                                    <a href="javascript:void(0)">柴油</a>
+                                    <a href="javascript:void(0)">油電混合</a>
+                                    <a href="javascript:void(0)">電動</a>
+                                </dd>
+                            </dl>
+
+                            <dl class=" aui-screen-list-item" attr="aui-terminal">
+                                <dt>乘客：</dt>
+                                <dd>
+                                    <a href="javascript:void(0)">2人</a>
+                                    <a href="javascript:void(0)">4-5人</a>
+                                    <a href="javascript:void(0)">6-7人</a>
+                                    <a href="javascript:void(0)">7以上人</a>
+                                </dd>
+                            </dl>
+
+                            <dl class=" aui-screen-list-item" attr="aui-terminal">
+                                <dt>車門：</dt>
+                                <dd>
+                                    <a href="javascript:void(0)">2-3門</a>
+                                    <a href="javascript:void(0)">4門</a>
+                                    <a href="javascript:void(0)">5門</a>
+                                    <a href="javascript:void(0)">5門以上</a>
+                                </dd>
+                            </dl>
+                            <dl class="aui-screen-list-item aui-aui-screen-list-item" attr="aui-terminal">
+                                <dt class="fs">配置：</dt>
+                                <dd>
+                                    <ul class="aui-list-pz-size fl1 fw">
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" value="A">天窗
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" value="B">真皮座椅
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" value="C">電動調節座椅
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" value="D">倒車顯影
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" value="E">恆溫空調
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" value="F">GPS導航
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" value="G">ESP
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" value="H">定速巡航
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" value="I">多功能方向盤
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" value="J">倒車雷達
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" value="K">氙氣大燈
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" value="L">車載藍牙
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <p>注:中古車因車齡、車況不同存在一車一價的狀況，一分價錢一分貨，切勿盲目追低！</p>
+        </div>
+    </section>
+
+
+    <section class="fd2">
+        <div class="con-mid fd2">
+
+            <div class="sear-box fd2">
+
+                <a href="#" class="p_item fl4">
+                    <div class="cimgbox fl5">
+                        <img src="./../images/p_car01.jpg" alt="" />
+                    </div>
+                    <div class="sear-info fo4">
+                        <h1>BMW 3-Series Sedan 330i 2019款 2.0L</h1>
+                        <h2>豐駿汽車2016省油省稅大馬力 520d 頂級環景 電尾門 導航倒顯 超美保固中</h2>
+                        <div class="sear-btnbox fl4">
+                            <button>加入比較</button>
+                            <button>加入收藏</button>
+                        </div>
+                    </div>
+                    <div class="sear-pricebox fl4">
+                        <h1><span>148</span>萬</h1>
+                        <p>2015年</p>
+                        <p>11.0萬km</p>
+                    </div>
+                </a>
+                <a href="#" class="p_item fl4">
+                    <div class="cimgbox fl5">
+                        <img src="./../images/p_car01.jpg" alt="" />
+                    </div>
+                    <div class="sear-info fo4">
+                        <h1>BMW 3-Series Sedan 330i 2019款 2.0L</h1>
+                        <h2>豐駿汽車2016省油省稅大馬力 520d 頂級環景 電尾門 導航倒顯 超美保固中 豐駿汽車2016省油省稅大馬力</h2>
+                        <div class="sear-btnbox fl4">
+                            <button>加入比較</button>
+                            <button>加入收藏</button>
+                        </div>
+                    </div>
+                    <div class="sear-pricebox fl4">
+                        <h1><span>98</span>萬</h1>
+                        <p>2015年</p>
+                        <p>11.0萬km</p>
+                    </div>
+                </a>
+                <a href="#" class="p_item fl4">
+                    <div class="cimgbox fl5">
+                        <img src="./../images/p_car01.jpg" alt="" />
+                    </div>
+                    <div class="sear-info fo4">
+                        <h1>BMW 3-Series Sedan 330i 2019款 2.0L</h1>
+                        <h2>豐駿汽車2016省油省稅大馬力 520d 頂級環景 電尾門 導航倒顯 超美保固中</h2>
+                        <div class="sear-btnbox fl4">
+                            <button>加入比較</button>
+                            <button>加入收藏</button>
+                        </div>
+                    </div>
+                    <div class="sear-pricebox fl4">
+                        <h1><span>88</span>萬</h1>
+                        <p>2015年</p>
+                        <p>11.0萬km</p>
+                    </div>
+                </a>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <style>
+        #list2 {
+            color: #fff700;
+            border-bottom: #9fcce2 5px solid;
+            height: 60px;
+        }
+    </style>
+
+
+
+
+    <script>
+        var dlNum = $("#aui-selectList").find("dl");
+        for (i = 0; i < dlNum.length; i++) {
+            $(".aui-screen-head-choice .aui-clear-list").append("<div class=\"aui-selected-info selectedShow\" style=\"display:none\"><span></span><label></label><em>X</em></div>");
+        }
+        var refresh = "true";
+        $(".aui-screen-list-item a ").live("click", function () {
+            var text = $(this).text();
+            var selectedShow = $(".selectedShow");
+            var textTypeIndex = $(this).parents("dl").index();
+            var textType = $(this).parent("dd").siblings("dt").text();
+            index = textTypeIndex - (2);
+            $(".aui-clear-delete").show();
+            $(".selectedShow").eq(index).show();
+            $(this).addClass("selected").siblings().removeClass("selected");
+            selectedShow.eq(index).find("span").text(textType);
+            selectedShow.eq(index).find("label").text(text);
+            var show = $(".selectedShow").length - $(".selectedShow:hidden").length;
+            if (show > 0) {
+                $(".aui-eliminate").show();
+            }
+
+        });
+        $(".selectedShow em").live("click", function () {
+            $(this).parents(".selectedShow").hide();
+            var textTypeIndex = $(this).parents(".selectedShow").index();
+            index = textTypeIndex;
+            $(".aui-screen-list-item").eq(index).find("a").removeClass("selected");
+
+            if ($(".aui-screen-list-item .selected").length < 2) {
+                $(".aui-eliminate").hide();
+            }
+        });
+
+        $(".aui-eliminate").live("click", function () {
+            $(".selectedShow").hide();
+            $(this).hide();
+            $(".aui-screen-list-item a ").removeClass("selected");
+        });
+
+    </script>
