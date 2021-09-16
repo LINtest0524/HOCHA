@@ -668,41 +668,109 @@ figure {
 
 .sear-btnbox button{
   padding: 10px 20px;
-  border: #9fcce2 1px solid;
+  border: #4ea2d1 1px solid;
   border-radius: 8px;
   margin-right: 12px;
   background-color: #fff;
   cursor: pointer;
-  color: #9fcce2;
+  color: #4ea2d1;
   transition: all 0.3s;
 }
 
 .sear-btnbox button:hover{
-  background-color: #9fcce2;
+  background-color: #4ea2d1;
   border: #fff 1px solid;
   color: #fff;
 }
 
 
+/* 賣車 */
+.sellbg{
+  width: 100%;
+  background: url(./../images/Red-BMW1.jpg) no-repeat center center/ 100%;
+  height: calc( 100vh - 60px) ;
+  overflow-y: auto;
+}
 
+.sell-table{
+  width: 1000px;
+  min-height: 444px;
+  border-radius: 22px;
+  background-color: rgba(0, 0, 0, 0.64);
+  box-shadow: #9fcce2 0 5px 0px;
+  padding: 30px;
+  margin-bottom: 54px;
+}
 
+.sell-title{
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #9fcce2;
+}
 
+.sell-title span {
+  display: flex;
+  flex: 1;
+  height: 1px;
+  background: #fff;
+  margin-left: 20px;
+}
 
+.sell-inputbox{
+  width: 88%;
+  margin: 25px 0;
+}
 
+.sell-s1{
+  width: 45%;
+  margin-bottom: 35px;
+}
 
+.sell-inputbox .sell-s1:nth-child(odd) {
+  margin-right: 10%;
+}
 
+.sell-inputbox p{
+  width: 100px;
+  color: #fff;
+  font-size: 15px;
+}
 
+.form-control{
+  display: flex;
+  flex: 1;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
+.sell_file{
+  color: #fff;
+  margin: 15px 0px 0 0;
+  width: 50%;
+  display: flex;
+}
 
+.sellbtn2{
+  width: 100%;
+  border-radius: 8px;
+  background-color: #9fcce2;
+  font-weight: bold;
+  border: 0;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
 
-
-
-
-
-
-
-
-
+.sellbtn2:hover{
+  background-color: #4284d9;
+}
 
 
 

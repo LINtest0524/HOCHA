@@ -27,7 +27,6 @@
     "firebase": "^4.6.2",
     "firebase-admin": "^8.1.0",
     "http-errors": "~1.6.3",
-    "mongoose": "^6.0.6",
     "morgan": "~1.9.1",
     "nodemailer": "^4.3.1",
     "path": "^0.12.7",
@@ -37,6 +36,7 @@
   },
   "devDependencies": {
     "eslint": "^4.10.0",
+    "mongoose": "^6.0.6",
     "eslint-config-google": "^0.9.1"
   }
 }

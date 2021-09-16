@@ -1,11 +1,204 @@
 <% layout('layout') %>
 
 
-    <section class="fd2">
-            <div class="con-mid fo2">
-                <p>sellcar</p>
+    <section class="fd5 sellbg">
+        <div class="con-mid fd2">
+
+            <div class="sell-table fd2">
+                <div class="sell-title fl4">
+                    請留下您的聯絡資訊及愛車基本資料
+                    <span></span>
+                </div>
+
+                <form class="w100 fl5" action="">
+
+                    <div class="sell-inputbox fl1 fw">
+                        <div class="sell-s1 fo2">
+                            <p>聯絡人姓名</p>
+                            <input type="text" class="form-control" name="yourName" id="yourName" placeholder="請輸入聯絡人姓名"
+                                maxlength="10">
+                        </div>
+                        <div class="sell-s1 fo2">
+                            <p>手　機</p>
+                            <input type="tel" class="form-control" name="yourmobile" id="yourmobile" placeholder="手機"
+                                maxlength="10">
+                        </div>
+                        <div class="sell-s1 fo2">
+                            <p>廠　牌</p>
+                            <select class="form-control" id="brand" name="brand">
+                                <option value="">選擇廠牌</option>
+                                <option value="MITSUBISHI">MITSUBISHI (三菱)</option>
+                                <option value="NISSAN">NISSAN (日產)</option>
+                                <option value="TOYOTA">TOYOTA (豐田)</option>
+                                <option value="HONDA">HONDA (本田)</option>
+                                <option value="SUZUKI">SUZUKI (鈴木)</option>
+                                <option value="MAZDA">MAZDA (馬自達)</option>
+                                <option value="FORD">FORD (福特)</option>
+                                <option value="HYUNDAI">HYUNDAI (現代)</option>
+                                <option value="ALFA ROMEO">ALFA ROMEO (愛發)</option>
+                                <option value="ASTON MARTIN">ASTON MARTIN (奧斯頓•馬丁)</option>
+                                <option value="AUDI">AUDI (奧迪)</option>
+                                <option value="BENZ">BENZ (賓士)</option>
+                                <option value="BENTLEY">BENTLEY (賓利)</option>
+                                <option value="BMW">BMW (寶馬)</option>
+                                <option value="BUICK">BUICK (別克)</option>
+                                <option value="CADILLAC">CADILLAC (凱迪拉克)</option>
+                                <option value="CHEVROLET">CHEVROLET (雪佛蘭)</option>
+                                <option value="CHRYSLER">CHRYSLER (克萊思勒)</option>
+                                <option value="CITROEN">CITROEN (雪鐵龍)</option>
+                                <option value="CHERY">CHERY (奇瑞)</option>
+                                <option value="DODGE">DODGE (道奇)</option>
+                                <option value="DAEWOO">DAEWOO (大宇)</option>
+                                <option value="DAIHATSU">DAIHATSU (大發)</option>
+                                <option value="DFSK">DFSK (台灣東風小康)</option>
+                                <option value="FERRARI">FERRARI (法拉利)</option>
+                                <option value="FIAT">FIAT (飛雅特)</option>
+                                <option value="FORMOSA">FORMOSA (台朔)</option>
+                                <option value="FOTON">FOTON (福田)</option>
+                                <option value="GM">GM (通用)</option>
+                                <option value="HUMMER">HUMMER (悍馬)</option>
+                                <option value="HINO">HINO (日野)</option>
+                                <option value="INFINITI">INFINITI (極致)</option>
+                                <option value="ISUZU">ISUZU (五十鈴)</option>
+                                <option value="IVECO">IVECO (威凱)</option>
+                                <option value="JAGUAR">JAGUAR (積架)</option>
+                                <option value="JEEP">JEEP (吉普)</option>
+                                <option value="KIA">KIA (起亞)</option>
+                                <option value="LAMBORGHINI">LAMBORGHINI (林寶堅尼)</option>
+                                <option value="LAND ROVER">LAND ROVER (路華)</option>
+                                <option value="LEXUS">LEXUS (凌志)</option>
+                                <option value="LOTUS">LOTUS (蓮花)</option>
+                                <option value="LUXGEN">LUXGEN (納智捷)</option>
+                                <option value="MAHINDRA">MAHINDRA (馬璽達)</option>
+                                <option value="MASERATI">MASERATI (瑪莎拉蒂)</option>
+                                <option value="MINI">MINI (迷你)</option>
+                                <option value="OPEL">OPEL (歐寶)</option>
+                                <option value="PEUGEOT">PEUGEOT (寶獅)</option>
+                                <option value="PORSCHE">PORSCHE (保時捷)</option>
+                                <option value="PROTON">PROTON (普而騰)</option>
+                                <option value="RENAULT">RENAULT (雷諾)</option>
+                                <option value="ROVER">ROVER(路華)</option>
+                                <option value="SAAB">SAAB (紳寶)</option>
+                                <option value="SSANGYONG">SSANGYONG (雙龍)</option>
+                                <option value="SUBARU">SUBARU (速霸陸)</option>
+                                <option value="SMART">SMART (司麥特)</option>
+                                <option value="SKODA">SKODA (斯科達)</option>
+                                <option value="SCION">SCION (賽揚)</option>
+                                <option value="TOBE">TOBE (裕隆酷比)</option>
+                                <option value="TESLA">TESLA (特斯拉)</option>
+                                <option value="VOLVO">VOLVO (富豪)</option>
+                                <option value="VW">VW (福斯)</option>
+                            </select>
+                        </div>
+                        <div class="sell-s1 fo2">
+                            <p>車　型</p>
+                            <select class="form-control" id="model" name="model">
+                                <option value="選擇車型">選擇車型</option>
+                                <option value="CANTER">CANTER</option>
+                                <option value="CHALLENGER">CHALLENGER</option>
+                                <option value="COLT PLUS">COLT PLUS</option>
+                                <option value="DELICA">DELICA</option>
+                                <option value="DIAMANTE">DIAMANTE</option>
+                                <option value="ECLIPSE">ECLIPSE</option>
+                                <option value="EVO">EVO</option>
+                                <option value="FREECA">FREECA</option>
+                                <option value="FUSO">FUSO</option>
+                                <option value="GALANT">GALANT</option>
+                                <option value="GRAND LANCER">GRAND LANCER</option>
+                                <option value="GREEN WAGON">GREEN WAGON</option>
+                                <option value="GRUNDER">GRUNDER</option>
+                                <option value="LANCER">LANCER</option>
+                                <option value="LANCER FORTIS">LANCER FORTIS</option>
+                                <option value="LANCER IO">LANCER IO</option>
+                                <option value="LANCER SPORTBACK">LANCER SPORTBACK</option>
+                                <option value="LEADCA">LEADCA</option>
+                                <option value="LIBERO">LIBERO</option>
+                                <option value="MAGIC">MAGIC</option>
+                                <option value="MINICAB">MINICAB</option>
+                                <option value="MIRAGE">MIRAGE</option>
+                                <option value="OUTLANDER">OUTLANDER</option>
+                                <option value="PAJERO">PAJERO</option>
+                                <option value="RVR">RVR</option>
+                                <option value="SAVRIN">SAVRIN</option>
+                                <option value="SPACE GEAR">SPACE GEAR</option>
+                                <option value="TOWNY">TOWNY</option>
+                                <option value="VARICA">VARICA</option>
+                                <option value="VERYCA">VERYCA</option>
+                                <option value="VIRAGE">VIRAGE</option>
+                                <option value="ZINGER">ZINGER</option>
+                            </select>
+                        </div>
+                        <div class="sell-s1 fo2">
+                            <p>年　份</p>
+                            <select class="form-control" id="year" name="year">
+                                <option value="">選擇年份</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                            </select>
+                        </div>
+                        <div class="sell-s1 fo2">
+                            <p>年　份</p>
+                            <select class="form-control" id="color" name="color">
+                                <option value="">選擇顏色</option>
+                                <option value="白色系">白色系</option>
+                                <option value="銀色系">銀色系</option>
+                                <option value="綠色系">綠色系</option>
+                                <option value="紅色系">紅色系</option>
+                                <option value="黃色系">黃色系</option>
+                                <option value="藍色系">藍色系</option>
+                                <option value="黑色系">黑色系</option>
+                                <option value="紫色系">紫色系</option>
+                                <option value="棕色系">棕色系</option>
+                                <option value="灰色系">灰色系</option>
+                                <option value="橘色系">橘色系</option>
+                                <option value="其他">其他</option>
+                            </select>
+                        </div>
+                        <div class="sell-s1 fo2">
+                            <p>里程數</p>
+                            <input type="text" class="form-control" name="mileage" id="mileage" placeholder="">
+                        </div>
+                        <div class="sell-s1 fo2">
+                            <p>CC數</p>
+                            <input type="text" class="form-control" name="mileage" id="mileage" placeholder="">
+                        </div>
+                        <div class="sell-s1 fd1">
+                            <p>上傳車輛實照</p>
+                            <div class="w100 fw fl1">
+                                <input type="file" class="sell_file" name="file1" id="file1">
+                                <input type="file" class="sell_file" name="file1" id="file1">
+                                <input type="file" class="sell_file" name="file1" id="file1">
+                                <input type="file" class="sell_file" name="file1" id="file1">
+                            </div>
+                        </div>
+                        <input type="submit" value="確定送出" class="sellbtn2">
+                    </div>
+
+                </form>
 
             </div>
+
+        </div>
     </section>
 
 
