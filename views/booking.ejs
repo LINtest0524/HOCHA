@@ -1,9 +1,167 @@
 <% layout('layout') %>
 
 
-    <section class="fd2">
-        <div class="con-mid fo2">
-            <p>booking</p>
+    <section class="w100 fd2 service-section-bg">
+        <div class="con-mid fd2">
+
+            <div class="bookbox fd1">
+
+                <h1 class="fl4">
+                    <span>Online reservation</span>&nbsp;線上預約
+                </h1>
+
+                <div class="uk-margin-large-top fl4">填寫基本資料
+                    <small class="uk-text-danger">＊為必填欄位</small>
+                </div>
+
+                <form action="" class="w100 fd1">
+
+                    <div class="bookform fw fl1">
+                        <label class="uk-form-label fd1">
+                            <p>聯絡人<b class="uk-text-danger">＊</b></p>
+                            <input type="text" class="bk-form-control" name="" id="" placeholder="請輸入聯絡人姓名"
+                                maxlength="10">
+                        </label>
+                        <label class="uk-form-label fd1">
+                            <p>車牌號碼<b class="uk-text-danger">＊</b></p>
+                            <input type="text" class="bk-form-control" name="" id="" placeholder="請輸入車牌號碼"
+                                maxlength="10">
+                        </label>
+                        <label class="uk-form-label fd1">
+                            <p>行動電話<b class="uk-text-danger">＊</b></p>
+                            <input type="tel" class="bk-form-control" name="" id="" placeholder="0912xxxxxx"
+                                maxlength="10">
+                        </label>
+                        <label class="uk-form-label fd1">
+                            <p>汽車品牌<b class="uk-text-danger">＊</b></p>
+                            <select class="bk-form-control" id="" name="">
+                                <option value="">選擇廠牌</option>
+                                <option value="MITSUBISHI">MITSUBISHI (三菱)</option>
+                                <option value="NISSAN">NISSAN (日產)</option>
+                                <option value="TOYOTA">TOYOTA (豐田)</option>
+                                <option value="HONDA">HONDA (本田)</option>
+                                <option value="SUZUKI">SUZUKI (鈴木)</option>
+                                <option value="MAZDA">MAZDA (馬自達)</option>
+                                <option value="FORD">FORD (福特)</option>
+                                <option value="HYUNDAI">HYUNDAI (現代)</option>
+                                <option value="ALFA ROMEO">ALFA ROMEO (愛發)</option>
+                                <option value="ASTON MARTIN">ASTON MARTIN (奧斯頓•馬丁)</option>
+                                <option value="AUDI">AUDI (奧迪)</option>
+                                <option value="BENZ">BENZ (賓士)</option>
+                                <option value="BENTLEY">BENTLEY (賓利)</option>
+                                <option value="BMW">BMW (寶馬)</option>
+                                <option value="BUICK">BUICK (別克)</option>
+                                <option value="CADILLAC">CADILLAC (凱迪拉克)</option>
+                                <option value="CHEVROLET">CHEVROLET (雪佛蘭)</option>
+                                <option value="CHRYSLER">CHRYSLER (克萊思勒)</option>
+                                <option value="CITROEN">CITROEN (雪鐵龍)</option>
+                                <option value="CHERY">CHERY (奇瑞)</option>
+                                <option value="DODGE">DODGE (道奇)</option>
+                                <option value="DAEWOO">DAEWOO (大宇)</option>
+                                <option value="DAIHATSU">DAIHATSU (大發)</option>
+                                <option value="DFSK">DFSK (台灣東風小康)</option>
+                                <option value="FERRARI">FERRARI (法拉利)</option>
+                                <option value="FIAT">FIAT (飛雅特)</option>
+                                <option value="FORMOSA">FORMOSA (台朔)</option>
+                                <option value="FOTON">FOTON (福田)</option>
+                                <option value="GM">GM (通用)</option>
+                                <option value="HUMMER">HUMMER (悍馬)</option>
+                                <option value="HINO">HINO (日野)</option>
+                                <option value="INFINITI">INFINITI (極致)</option>
+                                <option value="ISUZU">ISUZU (五十鈴)</option>
+                                <option value="IVECO">IVECO (威凱)</option>
+                                <option value="JAGUAR">JAGUAR (積架)</option>
+                                <option value="JEEP">JEEP (吉普)</option>
+                                <option value="KIA">KIA (起亞)</option>
+                                <option value="LAMBORGHINI">LAMBORGHINI (林寶堅尼)</option>
+                                <option value="LAND ROVER">LAND ROVER (路華)</option>
+                                <option value="LEXUS">LEXUS (凌志)</option>
+                                <option value="LOTUS">LOTUS (蓮花)</option>
+                                <option value="LUXGEN">LUXGEN (納智捷)</option>
+                                <option value="MAHINDRA">MAHINDRA (馬璽達)</option>
+                                <option value="MASERATI">MASERATI (瑪莎拉蒂)</option>
+                                <option value="MINI">MINI (迷你)</option>
+                                <option value="OPEL">OPEL (歐寶)</option>
+                                <option value="PEUGEOT">PEUGEOT (寶獅)</option>
+                                <option value="PORSCHE">PORSCHE (保時捷)</option>
+                                <option value="PROTON">PROTON (普而騰)</option>
+                                <option value="RENAULT">RENAULT (雷諾)</option>
+                                <option value="ROVER">ROVER(路華)</option>
+                                <option value="SAAB">SAAB (紳寶)</option>
+                                <option value="SSANGYONG">SSANGYONG (雙龍)</option>
+                                <option value="SUBARU">SUBARU (速霸陸)</option>
+                                <option value="SMART">SMART (司麥特)</option>
+                                <option value="SKODA">SKODA (斯科達)</option>
+                                <option value="SCION">SCION (賽揚)</option>
+                                <option value="TOBE">TOBE (裕隆酷比)</option>
+                                <option value="TESLA">TESLA (特斯拉)</option>
+                                <option value="VOLVO">VOLVO (富豪)</option>
+                                <option value="VW">VW (福斯)</option>
+                            </select>
+                        </label>
+                        <label class="uk-form-label fd1">
+                            <p>汽車型號<b class="uk-text-danger">＊</b></p>
+                            <select class="bk-form-control" id="model" name="model">
+                                <option value="選擇車型">選擇車型</option>
+                                <option value="CANTER">CANTER</option>
+                                <option value="CHALLENGER">CHALLENGER</option>
+                                <option value="COLT PLUS">COLT PLUS</option>
+                                <option value="DELICA">DELICA</option>
+                                <option value="DIAMANTE">DIAMANTE</option>
+                                <option value="ECLIPSE">ECLIPSE</option>
+                                <option value="EVO">EVO</option>
+                                <option value="FREECA">FREECA</option>
+                                <option value="FUSO">FUSO</option>
+                                <option value="GALANT">GALANT</option>
+                                <option value="GRAND LANCER">GRAND LANCER</option>
+                                <option value="GREEN WAGON">GREEN WAGON</option>
+                                <option value="GRUNDER">GRUNDER</option>
+                                <option value="LANCER">LANCER</option>
+                                <option value="LANCER FORTIS">LANCER FORTIS</option>
+                                <option value="LANCER IO">LANCER IO</option>
+                                <option value="LANCER SPORTBACK">LANCER SPORTBACK</option>
+                                <option value="LEADCA">LEADCA</option>
+                                <option value="LIBERO">LIBERO</option>
+                                <option value="MAGIC">MAGIC</option>
+                                <option value="MINICAB">MINICAB</option>
+                                <option value="MIRAGE">MIRAGE</option>
+                                <option value="OUTLANDER">OUTLANDER</option>
+                                <option value="PAJERO">PAJERO</option>
+                                <option value="RVR">RVR</option>
+                                <option value="SAVRIN">SAVRIN</option>
+                                <option value="SPACE GEAR">SPACE GEAR</option>
+                                <option value="TOWNY">TOWNY</option>
+                                <option value="VARICA">VARICA</option>
+                                <option value="VERYCA">VERYCA</option>
+                                <option value="VIRAGE">VIRAGE</option>
+                                <option value="ZINGER">ZINGER</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="uk-margin-large-top fl4">預約日期</div>
+
+                    <div class="bookform fw fl1">
+                        <label class="uk-form-label fd1">
+                            <p>日期</p>
+                            <input type="datetime-local" class="bk-form-control" name="" id="" placeholder="請選擇日期">
+                        </label>
+                    </div>
+
+                    <div class="uk-margin-large-top fl4">備註</div>
+
+                    <div class="bookform fw fl1">
+                        <textarea rows="5" id="" name="" maxlength="70" placeholder="請填寫所需保養服務項目或其他保修需求" class="bk-form-control-1"></textarea>
+                    </div>
+
+                    <div class="seartablebtn fl5 w100">
+                        <input type="submit" value="確定送出" class="sellbtn2 w30">
+                    </div>
+
+
+                </form>
+
+            </div>
 
         </div>
     </section>

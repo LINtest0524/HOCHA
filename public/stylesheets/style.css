@@ -670,6 +670,11 @@ figure {
   color: #fff;
 }
 
+.seartablebtn{
+  padding: 15px 0;
+  border-top: #f0f0f0 1px solid;
+}
+
 /* 賣車 */
 
 .sellbg {
@@ -745,7 +750,6 @@ figure {
 }
 
 .sellbtn2 {
-  width: 100%;
   border-radius: 8px;
   background-color: #9fcce2;
   font-weight: bold;
@@ -831,26 +835,118 @@ figure {
 
 
 
+/* 保養 */
+.service-section-bg{
+  background-attachment: fixed;
+  background: url(./../images/service-section-bg.jpg) no-repeat center bottom / 1920px;
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+}
 
+.bookbox{
+  width: 95%;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  padding: 35px 0;
+  min-height: 250px;
+  margin-top: 40px;
+  margin-bottom: 330px;
+  box-shadow: #9fcce2 0 5px 0px;
+}
 
+.bookbox h1{
+  font-size: 24px;
+}
 
+.bookbox h1 span{
+  color: #4ea2d1;
+  font-weight: bold;
+}
 
+.bookbox h1::before{
+  content: "";
+  display: flex;
+  width: 30px;
+  margin-right: 30px;
+  height: 2px;
+  background-color: #4ea2d1;
+}
 
+.uk-margin-large-top{
+  margin: 35px 0 30px 5%;
+  width: 90%;
+  font-size: 18px;
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: #bebebe 1px solid;
+}
 
+.uk-margin-large-top::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 32px;
+  height: 3px;
+  background-color: #4ea2d1;
+}
 
+.uk-text-danger {
+  color: #d85030;
+  font-size: 14px;
+  padding-left: 10px;
+}
 
+.bookform{
+  width: 90%;
+  margin-left: 5%;
+}
 
+.uk-form-label{
+  width: 33%;
+  margin-bottom: 25px;
+}
 
+.uk-form-label p{
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
 
+.bk-form-control {
+  display: flex;
+  width: 90%;
+  padding: 11px 12px;
+  font-size: 15px;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: 0.3s;
+}
 
+.bk-form-control-1 {
+  display: flex;
+  width: 100%;
+  padding: 11px 12px;
+  font-size: 15px;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: 0.3s;
+}
 
+.bk-form-control:focus, .bk-form-control-1:focus{
+  border: 1px solid #4ea2d1;
+  background-color: #eff8ff;
+}
 
-
-
-
-
-
-
+.bk-form-control::placeholder{
+  color: rgb(204, 204, 204);
+}
 
 
 
