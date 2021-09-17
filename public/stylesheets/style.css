@@ -28,16 +28,16 @@ footer {
   padding-left: 15px;
 }
 
-
 /* 返回頂部 */
-.toprightbox{
+
+.toprightbox {
   position: fixed;
   z-index: 900;
   right: 0px;
   bottom: 100px;
 }
 
-.compare{
+.compare {
   width: 40px;
   padding: 15px 5px;
   background-color: #4284d9;
@@ -49,11 +49,11 @@ footer {
   right: 0;
 }
 
-.compare:hover{
+.compare:hover {
   background-color: #63a4fa;
 }
 
-.collecticon{
+.collecticon {
   width: 40px;
   padding: 15px 5px;
   background-color: #c90b0b;
@@ -65,13 +65,13 @@ footer {
   right: 0;
 }
 
-.collecticon:hover{
+.collecticon:hover {
   background-color: #e70000;
 }
 
-.collecticon span, .compare span{
+.collecticon span, .compare span {
   -webkit-writing-mode: vertical-lr;
-  writing-mode: vertical-lr ;
+  writing-mode: vertical-lr;
   letter-spacing: 4px;
   font-size: 0.9rem;
 }
@@ -97,11 +97,11 @@ footer {
   background-color: #003267;
 }
 
-.menutop img{
+.menutop img {
   width: 30px;
 }
 
-.resultbox-1, .resultbox-2{
+.resultbox-1, .resultbox-2 {
   width: 170px;
   background-color: #f5f5f5;
   padding: 20px 0;
@@ -114,26 +114,26 @@ footer {
   overflow-y: auto;
 }
 
-.resultbox-1.on, .resultbox-2.on{
+.resultbox-1.on, .resultbox-2.on {
   right: 0px;
 }
 
-.compare.on, .collecticon.on{
+.compare.on, .collecticon.on {
   right: 170px;
 }
 
-.res_s1{
+.res_s1 {
   position: relative;
 }
 
-.res_s1 img{
+.res_s1 img {
   width: 150px;
   margin-bottom: 15px;
   overflow: hidden;
   border-radius: 10px;
 }
 
-.closex{
+.closex {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -147,7 +147,7 @@ footer {
   cursor: pointer;
 }
 
-.mbtn-1{
+.mbtn-1 {
   background: #c90b0b;
   color: #fff;
   width: 150px;
@@ -159,19 +159,6 @@ footer {
 }
 
 /* 返回 結束 */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 header {
   background: linear-gradient(0deg, #003166 0%, #1B6EBE 50%, #003166 100%);
@@ -618,7 +605,7 @@ figure {
   transition: all 0.3s;
 }
 
-.p_item:hover{
+.p_item:hover {
   background-color: #f5f5f5;
 }
 
@@ -634,39 +621,39 @@ figure {
   padding-right: 50px;
 }
 
-.sear-info h1{
+.sear-info h1 {
   font-size: 20px;
   font-weight: bold;
   color: #333;
   margin-bottom: 15px;
 }
 
-.sear-info h2{
+.sear-info h2 {
   color: #666;
   margin-bottom: 20px;
   line-height: 22px;
 }
 
-.sear-pricebox h1{
+.sear-pricebox h1 {
   color: #f79215;
 }
 
-.sear-pricebox h1 span{
+.sear-pricebox h1 span {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.sear-pricebox p{
+.sear-pricebox p {
   color: #333;
   font-weight: bold;
   margin-left: 50px;
 }
 
-.sear-btnbox{
+.sear-btnbox {
   width: 100%;
 }
 
-.sear-btnbox button{
+.sear-btnbox button {
   padding: 10px 20px;
   border: #4ea2d1 1px solid;
   border-radius: 8px;
@@ -677,22 +664,22 @@ figure {
   transition: all 0.3s;
 }
 
-.sear-btnbox button:hover{
+.sear-btnbox button:hover {
   background-color: #4ea2d1;
   border: #fff 1px solid;
   color: #fff;
 }
 
-
 /* 賣車 */
-.sellbg{
+
+.sellbg {
   width: 100%;
   background: url(./../images/Red-BMW1.jpg) no-repeat center center/ 100%;
-  height: calc( 100vh - 60px) ;
+  height: calc( 100vh - 60px);
   overflow-y: auto;
 }
 
-.sell-table{
+.sell-table {
   width: 1000px;
   min-height: 444px;
   border-radius: 22px;
@@ -702,7 +689,7 @@ figure {
   margin-bottom: 54px;
 }
 
-.sell-title{
+.sell-title {
   width: 100%;
   font-size: 18px;
   font-weight: bold;
@@ -717,12 +704,12 @@ figure {
   margin-left: 20px;
 }
 
-.sell-inputbox{
+.sell-inputbox {
   width: 88%;
   margin: 25px 0;
 }
 
-.sell-s1{
+.sell-s1 {
   width: 45%;
   margin-bottom: 35px;
 }
@@ -731,13 +718,13 @@ figure {
   margin-right: 10%;
 }
 
-.sell-inputbox p{
+.sell-inputbox p {
   width: 100px;
   color: #fff;
   font-size: 15px;
 }
 
-.form-control{
+.form-control {
   display: flex;
   flex: 1;
   height: 34px;
@@ -750,14 +737,14 @@ figure {
   border-radius: 4px;
 }
 
-.sell_file{
+.sell_file {
   color: #fff;
   margin: 15px 0px 0 0;
   width: 50%;
   display: flex;
 }
 
-.sellbtn2{
+.sellbtn2 {
   width: 100%;
   border-radius: 8px;
   background-color: #9fcce2;
@@ -768,9 +755,169 @@ figure {
   transition: all 0.3s;
 }
 
-.sellbtn2:hover{
+.sellbtn2:hover {
   background-color: #4284d9;
 }
+
+/* 比較結果 */
+
+.comp-box {
+  width: 100%;
+  min-height: 222px;
+  margin-top: 40px;
+  margin-bottom: 120px;
+  background-color: #ececec;
+  color: #333;
+}
+
+/* 第一行 */
+
+.comp-h1, .comp-h2 {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.comp-h1-s1 {
+  width: 120px;
+  height: 220px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 20px 0;
+  background: #9fcce2 url(./../images/comp-bg1.svg) no-repeat 37px 150px / 100px;
+}
+
+.comp-h1-img {
+  flex: 1;
+  height: 220px;
+  border-left: #9fcce2 1px solid;
+}
+
+.comp-h1-img img {
+  height: 200px;
+}
+
+.comp-h2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.comp-h2-s1 {
+  width: 120px;
+  padding: 19px 5px 0;
+  font-size: 17px;
+}
+
+.comp-h2-txt {
+  flex: 1;
+  padding: 18px 5px;
+  border-left: #9fcce2 1px solid;
+}
+
+.comp-box .comp-h2:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.comp-h2-txt h1{
+  color: #ce0d0c;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.comp-h2-txt p{
+  margin-bottom: 15px;
+  line-height: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
