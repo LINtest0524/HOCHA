@@ -165,6 +165,7 @@ header {
   background: -moz-linear-gradient(0deg, #003166 0%, #1B6EBE 50%, #003166 100%);
   background: -webkit-linear-gradient(0deg, #003166 0%, #1B6EBE 50%, #003166 100%);
   background: -o-linear-gradient(0deg, #003166 0%, #1B6EBE 50%, #003166 100%);
+  box-shadow: rgb(0, 0, 0, 0.38) 0 2px 5px;
 }
 
 .con-mid {
@@ -210,6 +211,10 @@ header {
 }
 
 /* 選單登入 */
+
+.loginbg {
+  background: url(./../images/rrww.jpg) no-repeat center center;
+}
 
 .userbox_s1 a {
   color: rgb(255, 255, 255);
@@ -613,6 +618,11 @@ figure {
   margin-right: 20px;
 }
 
+.cimgbox img {
+  height: 200px;
+  width: 277px;
+}
+
 .sear-info {
   flex: 1;
   height: 165px;
@@ -670,7 +680,7 @@ figure {
   color: #fff;
 }
 
-.seartablebtn{
+.seartablebtn {
   padding: 15px 0;
   border-top: #f0f0f0 1px solid;
 }
@@ -822,28 +832,27 @@ figure {
   background-color: #f8f8f8;
 }
 
-.comp-h2-txt h1{
+.comp-h2-txt h1 {
   color: #ce0d0c;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.comp-h2-txt p{
+.comp-h2-txt p {
   margin-bottom: 15px;
   line-height: 1.1rem;
 }
 
-
-
 /* 保養 */
-.service-section-bg{
+
+.service-section-bg {
   background-attachment: fixed;
   background: url(./../images/service-section-bg.jpg) no-repeat center bottom / 1920px;
   height: calc(100vh - 120px);
   overflow-y: auto;
 }
 
-.bookbox{
+.bookbox {
   width: 95%;
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 18px;
@@ -854,16 +863,16 @@ figure {
   box-shadow: #9fcce2 0 5px 0px;
 }
 
-.bookbox h1{
+.bookbox h1 {
   font-size: 24px;
 }
 
-.bookbox h1 span{
+.bookbox h1 span {
   color: #4ea2d1;
   font-weight: bold;
 }
 
-.bookbox h1::before{
+.bookbox h1::before {
   content: "";
   display: flex;
   width: 30px;
@@ -872,7 +881,7 @@ figure {
   background-color: #4ea2d1;
 }
 
-.uk-margin-large-top{
+.uk-margin-large-top {
   margin: 35px 0 30px 5%;
   width: 90%;
   font-size: 18px;
@@ -881,7 +890,7 @@ figure {
   border-bottom: #bebebe 1px solid;
 }
 
-.uk-margin-large-top::before{
+.uk-margin-large-top::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -897,17 +906,17 @@ figure {
   padding-left: 10px;
 }
 
-.bookform{
+.bookform {
   width: 90%;
   margin-left: 5%;
 }
 
-.uk-form-label{
+.uk-form-label {
   width: 33%;
   margin-bottom: 25px;
 }
 
-.uk-form-label p{
+.uk-form-label p {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
@@ -939,83 +948,491 @@ figure {
   transition: 0.3s;
 }
 
-.bk-form-control:focus, .bk-form-control-1:focus{
+.bk-form-control:focus, .bk-form-control-1:focus {
   border: 1px solid #4ea2d1;
   background-color: #eff8ff;
 }
 
-.bk-form-control::placeholder{
+.bk-form-control::placeholder {
   color: rgb(204, 204, 204);
+}
+
+/* 麵包屑 */
+
+.breadCrumb {
+  color: #999;
+  height: 50px;
+  background-color: #f5f5f5;
+}
+
+.breadCrumb a {
+  font-size: 14px;
+  color: #999;
+}
+
+/* 焦點圖  start*/
+
+#app {
+  width: 600px;
+  height: 550px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.ui-big-images {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+}
+
+.ui-big-image {
+  width: 100%;
+  margin-right: -100%;
+}
+
+.ui-big-image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 600px;
+  height: 450px;
+  display: block;
+  background-color: #9fcce2;
+}
+
+.uiin {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+@media (max-height: 600px) {
+  .ui-big-image img {
+    -o-object-position: center center;
+    object-position: center center;
+  }
+}
+
+.ui-thumbnails {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.ui-thumbnail {
+  display: block;
+  margin-right: 7px;
+  cursor: pointer;
+  border: transparent 2px solid;
+}
+
+.ui-thumbnail:hover {
+  border: #9fcce2 2px solid;
+  box-sizing: border-box;
+}
+
+.ui-cuticle {
+  background-color: #D4A12D;
+  position: absolute;
+  height: .25rem;
+  width: 110px;
+}
+
+.ui-thumbnail>img {
+  width: 110px;
+  height: 73px;
+  object-fit: cover;
+}
+
+.ui-content {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 46%;
+}
+
+.lileft {
+  position: absolute;
+  width: 35px;
+  height: 73px;
+  left: 0;
+  top: 473px;
+  color: #FFF;
+  font-size: 35px;
+  font-family: monospace;
+  transition: inherit;
+  transition-duration: 300ms;
+  z-index: 55;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lileft:hover {
+  background-color: #D4A12D;
+}
+
+.liright {
+  position: absolute;
+  width: 35px;
+  height: 73px;
+  right: 0;
+  top: 473px;
+  color: #FFF;
+  font-size: 35px;
+  font-family: monospace;
+  transition: inherit;
+  transition-duration: 300ms;
+  z-index: 55;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.liright:hover {
+  background-color: #D4A12D;
+}
+
+.ui-articles {
+  background: #493e56;
+  color: white;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.ui-article {
+  padding: 1.5rem;
+  width: 100%;
+  margin-right: -100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ui-paragraph {
+  margin: 0;
+  font-size: .7rem;
+  line-height: 1.7;
+}
+
+.ui-nav {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 100%;
+  background: inherit;
+}
+
+.ui-nav button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 35px;
+  width: 40px;
+  height: 73px;
+  color: #FFF;
+  font-family: monospace;
+  transition: inherit;
+  transition-duration: 300ms;
+}
+
+.ui-nav button:hover, .ui-nav button:focus {
+  background: #D4A12D;
+  outline: none;
+}
+
+.ui-nav button:active {
+  outline: none;
+  transition-duration: 100ms;
+}
+
+.ui-heading {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.ui-heading:before {
+  content: 'Animator';
+  font-size: .5rem;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: .5rem;
+  letter-spacing: 1px;
+}
+
+/* ---------------------------------- */
+
+.ui-big-image {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.ui-big-image img {
+  -webkit-transform: scale(0.85);
+  transform: scale(0.85);
+}
+
+.ui-big-image[data-active]~.ui-big-image {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.ui-big-image[data-active] {
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.ui-big-image[data-active] img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* ---------------------------------- */
+
+.ui-article {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.ui-article:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #D4A12D;
+  opacity: 1;
+  transition-duration: 0.35s;
+  z-index: 1;
+}
+
+.ui-article[data-active]~.ui-article {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.ui-article[data-active] {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.ui-article[data-active]:before {
+  opacity: 0;
+}
+
+/* ---------------------------------- */
+
+.ui-thumbnail:active>img {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  transition-duration: 100ms;
+}
+
+.ui-thumbnail:focus {
+  outline: none;
+}
+
+.ui-cuticle {
+  display: none;
+}
+
+.ui-thumbnail[data-active]>img, .ui-thumbnail:hover>img {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.ui-thumbnail[data-active] .ui-cuticle {
+  display: block;
+}
+
+/* ---------------------------------- */
+
+/* 焦點圖 end */
+
+/* 內頁右側 */
+
+.acrliright {
+  flex: 1;
+  padding: 10px 0 10px 50px;
+}
+
+.infos-head-title {
+  font-size: 25px;
+  color: #333;
+  font-weight: bold;
+  line-height: 34px;
+}
+
+.infos-head-desp {
+  font-size: 14px;
+  color: #999;
+  margin: 18px 0;
+}
+
+.car-price-box {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  color: #e00e0d;
+  font-size: 22px;
+  padding-bottom: 10px;
+  border-bottom: #ececec 1px solid;
+}
+
+.car-price-box b {
+  font-size: 30px;
+}
+
+.infos-head-text {
+  color: #999;
+  padding: 20px 0;
+}
+
+.infos-head-text>div {
+  margin-bottom: 12px;
+}
+
+.line-btn {
+  width: 160px;
+  height: 50px;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 20px;
+  text-align: center;
+  background: #00C300;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.line-btn-1 {
+  width: 160px;
+  height: 50px;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 20px;
+  text-align: center;
+  background: #b10000;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+.carcontact {
+  color: #333;
+  font-size: 22px;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.carcontact span {
+  color: #FD641C;
+  font-size: 22px;
+  margin-left: 20px;
+  font-weight: normal;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 車輛配備 */
+.Hbtn1 {
+  background-color: #b9b9b9;
+  margin-left: 5px;
+  font-size: 1.1rem;
+  padding: 15px 50px;
+  color: #fff;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Hbtn1.active {
+  background: #094685;
+}
+
+.Hbtn1:hover {
+  background: #094685;
+}
+
+.tab_content2{
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.cartitle{
+  width: 100%;
+  color: #b10000;
+  background: url(./../images/cartitle.svg) no-repeat center left;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.secTitle{
+  margin-top: 5px;
+  padding-left: 40px;
+  color: #333;
+}
+
+.secTitle h1{
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.secTitle h1::after{
+  content: "";
+  flex: 1;
+  height: 1px;
+  border-bottom: #999 1px dotted;
+  display: flex;
+  margin-left: 12px;
+}
+
+.secTitleli{
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.secTitleli p{
+  width: 20%;
+  background: url(./../images/bgCarSpecUnchecked.png) no-repeat center left;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.secTitleli p.sec_ok{
+  background: url(./../images/bgCarSpecChecked.png) no-repeat center left;
+}
+
+.sec_downtxt{
+  width: 33%;
+  margin: 20px 0 10px;
+}
+
+.sec_downtxt span{
+  margin-left: 20px;
+}
+
+.tab_content img, .tab_content2 img{
+  max-width: 100%;
+}
 
 
 

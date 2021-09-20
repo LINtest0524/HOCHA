@@ -67,6 +67,9 @@ var compare = require('./routes/compare');
 // 預約保養
 var booking = require('./routes/booking');
 
+// 商品內頁
+var cardetail = require('./routes/cardetail');
+
 
 
 app.use('/', routes);
@@ -76,6 +79,7 @@ app.use('/sellcar', sellcar);
 app.use('/compare', compare);
 app.use('/search', search);
 app.use('/booking', booking);
+app.use('/cardetail', cardetail);
 
 
 

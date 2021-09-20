@@ -212,7 +212,7 @@ html {
 
 body {
   -webkit-tap-highlight-color: transparent; /*手機版點擊透明藍色拿掉*/
-  font-family: "微軟正黑體", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", "Open Sans", Arial, "Hiragino Sans GB", "微软雅黑", STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft JhengHei", 微軟正黑體, sans-serif;
   -webkit-text-size-adjust: 100%; /*移除ios文字亂改大小*/
 
 }
@@ -693,10 +693,11 @@ section {
 /* width */
 ::-webkit-scrollbar {
   width: 0px;
+  height: 0px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #000; 
+  background: rgb(197, 197, 197); 
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
